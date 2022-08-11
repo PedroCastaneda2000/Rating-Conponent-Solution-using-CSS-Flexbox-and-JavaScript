@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+/* -------------------- Global -------------------- */
+:root {
+  /* Text Colors */
+  --text-White: hsl(0, 0%, 100%);
+  --text-light-Grey: hsl(217, 12%, 63%);
+  --text-medium-Grey: hsl(216, 12%, 54%);
+  --text-Orange: hsl(25, 97%, 53%);
+  /* Background Colors */
+  --bg-icon-Blue: hsl(213, 20%, 22%);
+  --bg-dark-Blue: hsl(213, 19%, 18%);
+  --bg-verydark-Blue: hsl(216, 12%, 8%);
+  --bg-Orange: hsl(25, 97%, 53%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------- /Global -------------------- */
+
+/* -------------------- Main Container -------------------- */
+
+.main {
+  background-color: var(--bg-verydark-Blue);
+  min-height: 100vh;
+  padding: 0 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__container {
+  /* background-color: hsl(213, 19%, 18%); */
+  background: linear-gradient(180deg, hsl(213, 19%, 18%), hsl(214, 24%, 13%));
+
+  max-width: 21.875rem;
+  padding: 1.75rem;
+  border-radius: 1rem;
+}
+
+/* -------------------- /Main Container -------------------- */
+
+/* -------------------- Main Icon -------------------- */
+
+.main__icon {
+  background-color: var(--bg-icon-Blue);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__icon img {
+  width: 1rem;
+}
+
+/* -------------------- /Main Icon -------------------- */
+
+/* -------------------- Main Information -------------------- */
+
+.main__information {
+  margin-top: 1rem;
+}
+
+.main__information h1 {
+  color: var(--text-White);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main__information p {
+  margin-top: 1rem;
+  color: var(--text-light-Grey);
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+/* -------------------- /Main Information -------------------- */
+
+/* -------------------- Main Ratings -------------------- */
+
+.main__ratings {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ratings__btn {
+  background-color: var(--bg-dark-Blue);
+  color: var(--text-light-Grey);
+
+  font-size: 0.9375rem;
+  font-weight: 700;
+
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  transition: all 1.5s ease;
+}
+
+.ratings__btn:hover {
+  background-color: var(--text-medium-Grey);
+  color: var(--text-White);
+  transition: all 1.5s ease;
+}
+
+#ratings-btn.active {
+  background-color: var(--bg-Orange);
+  color: var(--text-White);
+
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* -------------------- /Main Ratings -------------------- */
+
+/* -------------------- Main Submit -------------------- */
+.main__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__submit button {
+  color: var(--text-White);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.submit__btn {
+  background-color: var(--bg-Orange);
+  width: 100%;
+
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.submit__btn:hover {
+  background-color: var(--text-White);
+  transition: all 0.3s ease;
+}
+
+.main__submit:hover button {
+  color: var(--text-Orange);
+  transition: all 0.3s ease;
+}
+
+/* -------------------- /Main Submit -------------------- */
+
+/* ---------------------------------------- THANK YOU SECTION----------------------------------------*/
+
+.main__container.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__outcome {
+  background-color: var(--bg-dark-Blue);
+  border-radius: 2rem;
+  padding: 0.25rem 1rem;
+  margin-top: 1rem;
+}
+
+.main__outcome p {
+  color: var(--text-Orange);
+
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.main__thanks {
+  margin-top: 1rem;
+
+  text-align: center;
+}
+
+.main__thanks h1 {
+  color: var(--text-White);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.main__thanks p {
+  margin-top: 1rem;
+  color: var(--text-light-Grey);
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
