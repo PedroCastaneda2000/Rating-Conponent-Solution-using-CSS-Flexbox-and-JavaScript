@@ -45,9 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-1. I learned how to use JavaScript to modify the DOM.
-
-<!-- Whenever a ratingsBtn is clicked then it will turn orange. If another ratingsBtn is clicked then the previously activated one with be deactivated. (only one will be orange/activated) -->
+1. Whenever a ratingsBtn is clicked then it will turn orange. If another ratingsBtn is clicked then the previously activated one with be deactivated. (only one will be orange/activated)
 
 ```js
 const proudOfThisFunc = () => {
